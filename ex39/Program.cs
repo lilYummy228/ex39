@@ -14,22 +14,22 @@ namespace ex39
 
     class Player
     {
-        public string Name;
-        public string Race;
-        public string Classification;
-        public int Level;
+        private string _name;
+        private string _race;
+        private string _classification;
+        private int _level;
 
         public Player(string name, string race, string classification, int level)
         {
-            Name = name;
-            Race = race;
-            Classification = classification;
-            Level = level;
+            _name = name;
+            _race = race;
+            _classification = classification;
+            _level = level;
         }
 
         public void ShowInfo()
         {
-            Console.WriteLine($"Имя: {Name}\nРаса: {Race}\nКласс: {Classification}\nУровень: {Level}");
+            Console.WriteLine($"Имя: {_name}\nРаса: {_race}\nКласс: {_classification}\nУровень: {_level}");
         }
     }
 }
